@@ -15,23 +15,24 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="#">
-      <span class="visually-hidden">Логотип Cat Energy</span>
-      <picture>
-        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
-        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
-        <img class="main-header__logo-image" width="33" height="38" src="images/logo-mobile.svg" alt="Логотип.">
-      </picture>
-      <picture>
-        <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text.svg">
-        <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text.svg">
-        <img class="main-header__logo-text-image" width="101" height="18" src="images/logo-text-dark.svg" alt="Cat energy.">
-      </picture>
-    </a>
-
-    <nav class="main-nav">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo" href="#">
+        <span class="visually-hidden">Логотип Cat Energy</span>
+        <picture>
+          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+          <img class="main-header__logo-image" width="33" height="38" src="images/logo-mobile.svg" alt="Логотип.">
+        </picture>
+        <picture>
+          <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text.svg">
+          <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text.svg">
+          <img class="main-header__logo-text-image" width="101" height="18" src="images/logo-text-dark.svg" alt="Cat energy.">
+        </picture>
+      </a>
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list ">
+    </div>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--current">
           <a href="#">
             Главная
