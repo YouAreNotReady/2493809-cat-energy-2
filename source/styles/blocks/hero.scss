@@ -1,28 +1,73 @@
+.hero {
+  position: relative;
+  margin-bottom: 20px;
+}
+
 .hero__section {
-  background-color: rgba(104, 183, 56, 0.85);
+  position: relative;
+
+  width: 320px;
+  //временно
+  margin-left: -20px;
+  margin-bottom: 138px;
+  padding: 27px 35px 164px 36px;
+
+  background-color: #68b738;
+
+  &::before {
+    @media (min-width: $mobile-width-only) {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("../../images/background-hero-mobile@1x.png");
+      background-repeat: no-repeat;
+      opacity: 0.15;
+    }
+  }
 }
 
 .hero__header {
+  margin: 0;
+  margin-bottom: 25px;
+  width: 250px;
+
   font-family: $secondary-font;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
   color: #ffffff;
+  text-align: center;
 }
 
 .hero__slogan {
+  margin: 0;
+
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;
+  text-align: center;
+}
+
+.hero__image-wrapper {
+  position: relative;
+  top: -133px;
+}
+
+
+.hero__image {
+  display: block;
+  position: absolute;
+  top: -133px;
 }
 
 .hero__button {
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-
-  background-color: #68b738;
-  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  min-height: 40px;
+  padding: 10px 64px;
 }
