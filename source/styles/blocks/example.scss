@@ -1,8 +1,20 @@
 .example {
+  min-width: 320px;
+  //времено
+  margin-left: -20px;
+
   background-color: #eaeaea;
 }
 
+.example__text-wrapper {
+  padding: 20px;
+  padding-top: 25px;
+}
+
 .example__title {
+  margin: 0;
+  margin-bottom: 40px;
+
   font-family: $secondary-font;
   font-size: 36px;
   font-weight: 400;
@@ -10,6 +22,8 @@
 }
 
 .example__description {
+  margin: 0;
+
   font-family: $primary-font;
   font-size: 14px;
   line-height: 18px;
@@ -17,9 +31,80 @@
 }
 
 .example__cost {
+  margin: 0;
+  margin-bottom: 20px;
+
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 20px;
-
+  text-align: center;
   text-transform: uppercase;
+}
+
+.example__cat-slider {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 140px 140px;
+  width: 280px;
+  height: 296px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.example__slider {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+
+  display: block;
+  width: 4px;
+  height: 256px;
+
+  background-color: #666666;
+  border-radius: 2px;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -18px;
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    background-image: url("../../icons/stack.svg#icon-slider");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px 18px;
+    background-color: #ffffff;
+
+    border: 2px solid #666666;
+    border-radius: 50%;
+    content: "";
+    cursor: pointer;
+  }
+}
+
+.example__image-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 140px;
+  height: 256px;
+  overflow: hidden;
+}
+
+.example__image {
+  position: absolute;
+  left: 0;
+
+  display: block;
+  min-width: 280px;
+  min-height: 256px;
+  object-fit: cover;
+}
+
+.example__image--right {
+  left: auto;
+  right: 0;
 }
