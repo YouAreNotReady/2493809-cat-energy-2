@@ -1,9 +1,3 @@
-.partnership {
-  &--in-catalog {
-    background-color: #f2f2f2;
-  }
-}
-
 .partnership__info {
   display: flex;
   justify-content: space-between;
@@ -11,6 +5,10 @@
   //временно
   margin-left: -20px;
   padding: 20px;
+
+  &--in-catalog {
+    background-color: #f2f2f2;
+  }
 }
 
 .partnership__title {

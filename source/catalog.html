@@ -15,8 +15,8 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__wrapper">
-      <a class="main-header__logo" href="#">
+    <div class="main-header__wrapper main-header__wrapper--catalog">
+      <a class="main-header__logo" href="index.html">
         <span class="visually-hidden">Логотип Cat Energy</span>
         <picture>
           <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
@@ -61,168 +61,182 @@
           <picture>
             <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/catalog-desktop-1@1x.png 1x, images/catalog/catalog-desktop-1@2x.png 2x">
             <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/catalog-tablet-1@1x.png 1x, images/catalog/catalog-tablet-1@2x.png 2x">
-            <img width="140" height="107" src="images/catalog/catalog-mobile-1@1x.png" srcset="images/catalog/catalog-mobile-1@2x.png 2x" alt="Изображение товара.">
+            <img class="catalog-card__image" width="140" height="107" src="images/catalog/catalog-mobile-1@1x.png" srcset="images/catalog/catalog-mobile-1@2x.png 2x" alt="Изображение товара.">
           </picture>
-          <h3 class="catalog-card__title">Cat Energy PRO 500 г</h3>
-          <dl class="catalog-card__values values-list">
-            <div class="values-list__item">
-              <dt class="values-list__value">500 г</dt>
-              <dd class="values-list__description">Масса</dd>
-            </div>
-            <div class="values-list__item">
-              <dt class="values-list__value">Курица</dt>
-              <dd class="values-list__description">Вкус</dd>
-            </div>
-            <div class="values-list__item">
-              <dt class="values-list__value">700 ₽</dt>
-              <dd class="values-list__description">Цена</dd>
-            </div>
-          </dl>
-          <a class="button-primary" href="#">Заказать</a>
+          <div class="catalog-card__product-info">
+            <h3 class="catalog-card__title">Cat Energy PRO 500 г</h3>
+            <dl class="catalog-card__values values-list">
+              <div class="values-list__item">
+                <dt class="values-list__value">Масса</dt>
+                <dd class="values-list__description">500 г</dd>
+              </div>
+              <div class="values-list__item">
+                <dt class="values-list__value">Вкус</dt>
+                <dd class="values-list__description">Курица</dd>
+              </div>
+              <div class="values-list__item">
+                <dt class="values-list__value">Цена</dt>
+                <dd class="values-list__description">700 ₽</dd>
+              </div>
+            </dl>
+          </div>
+          <a class="catalog-card__button button-primary" href="#">Заказать</a>
         </li>
         <li class="catalog__item catalog-card">
           <picture>
             <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/catalog-desktop-2@1x.png 1x, images/catalog/catalog-desktop-2@2x.png 2x">
             <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/catalog-tablet-2@1x.png 1x, images/catalog/catalog-tablet-2@2x.png 2x">
-            <img width="140" height="107" src="images/catalog/catalog-mobile-2@1x.png" srcset="images/catalog/catalog-mobile-2@2x.png 2x" alt="Изображение товара.">
+            <img class="catalog-card__image" width="140" height="107" src="images/catalog/catalog-mobile-2@1x.png" srcset="images/catalog/catalog-mobile-2@2x.png 2x" alt="Изображение товара.">
           </picture>
-          <h3 class="catalog-card__title">Cat Energy PRO 1000 г</h3>
-          <dl class="catalog-card__values values-list">
-            <div class="values-list__item">
-              <dt class="values-list__value">1000 г</dt>
-              <dd class="values-list__description">Масса</dd>
-            </div>
-            <div class="values-list__item">
-              <dt class="values-list__value">Курица</dt>
-              <dd class="values-list__description">Вкус</dd>
-            </div>
-            <div class="values-list__item">
-              <dt class="values-list__value">1000 ₽</dt>
-              <dd class="values-list__description">Цена</dd>
-            </div>
-          </dl>
-          <a class="button-primary" href="#">Заказать</a>
+          <div class="catalog-card__product-info">
+            <h3 class="catalog-card__title">Cat Energy PRO 1000 г</h3>
+            <dl class="catalog-card__values values-list">
+              <div class="values-list__item">
+                <dt class="values-list__value">Масса</dt>
+                <dd class="values-list__description">1000 г</dd>
+              </div>
+              <div class="values-list__item">
+                <dt class="values-list__value">Вкус</dt>
+                <dd class="values-list__description">Курица</dd>
+              </div>
+              <div class="values-list__item">
+                <dt class="values-list__value">Цена</dt>
+                <dd class="values-list__description">1000 ₽</dd>
+              </div>
+            </dl>
+          </div>
+          <a class="catalog-card__button button-primary" href="#">Заказать</a>
         </li>
         <li class="catalog__item catalog-card">
           <picture>
             <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/catalog-desktop-3@1x.png 1x, images/catalog/catalog-desktop-3@2x.png 2x">
             <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/catalog-tablet-3@1x.png 1x, images/catalog/catalog-tablet-3@2x.png 2x">
-            <img width="140" height="107" src="images/catalog/catalog-mobile-3@1x.png" srcset="images/catalog/catalog-mobile-3@2x.png 2x" alt="Изображение товара.">
+            <img class="catalog-card__image" width="140" height="107" src="images/catalog/catalog-mobile-3@1x.png" srcset="images/catalog/catalog-mobile-3@2x.png 2x" alt="Изображение товара.">
           </picture>
-          <h3 class="catalog-card__title">Cat Energy PRO 500 г</h3>
-          <dl class="catalog-card__values values-list">
-            <div class="values-list__item">
-              <dt class="values-list__value">500 г</dt>
-              <dd class="values-list__description">Масса</dd>
-            </div>
-            <div class="values-list__item">
-              <dt class="values-list__value">Рыба</dt>
-              <dd class="values-list__description">Вкус</dd>
-            </div>
-            <div class="values-list__item">
-              <dt class="values-list__value">700 ₽</dt>
-              <dd class="values-list__description">Цена</dd>
-            </div>
-          </dl>
-          <a class="button-primary" href="#">Заказать</a>
+          <div class="catalog-card__product-info">
+            <h3 class="catalog-card__title">Cat Energy PRO 500 г</h3>
+            <dl class="catalog-card__values values-list">
+              <div class="values-list__item">
+                <dt class="values-list__value">Масса</dt>
+                <dd class="values-list__description">500 г</dd>
+              </div>
+              <div class="values-list__item">
+                <dt class="values-list__value">Вкус</dt>
+                <dd class="values-list__description">Рыба</dd>
+              </div>
+              <div class="values-list__item">
+                <dt class="values-list__value">Цена</dt>
+                <dd class="values-list__description">700 ₽</dd>
+              </div>
+            </dl>
+          </div>
+          <a class="catalog-card__button button-primary" href="#">Заказать</a>
         </li>
         <li class="catalog__item catalog-card">
           <picture>
             <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/catalog-desktop-4@1x.png 1x, images/catalog/catalog-desktop-4@2x.png 2x">
             <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/catalog-tablet-4@1x.png 1x, images/catalog/catalog-tablet-4@2x.png 2x">
-            <img width="140" height="107" src="images/catalog/catalog-mobile-4@1x.png" srcset="images/catalog/catalog-mobile-4@2x.png 2x" alt="Изображение товара.">
+            <img class="catalog-card__image" width="140" height="107" src="images/catalog/catalog-mobile-4@1x.png" srcset="images/catalog/catalog-mobile-4@2x.png 2x" alt="Изображение товара.">
           </picture>
-          <h3 class="catalog-card__title">Cat Energy PRO 1000 г</h3>
-          <dl class="catalog-card__values values-list">
-            <div class="values-list__item">
-              <dt class="values-list__value">1000 г</dt>
-              <dd class="values-list__description">Масса</dd>
-            </div>
-            <div class="values-list__item">
-              <dt class="values-list__value">Рыба</dt>
-              <dd class="values-list__description">Вкус</dd>
-            </div>
-            <div class="values-list__item">
-              <dt class="values-list__value">1000 ₽</dt>
-              <dd class="values-list__description">Цена</dd>
-            </div>
-          </dl>
-          <a class="button-primary" href="#">Заказать</a>
+          <div class="catalog-card__product-info">
+            <h3 class="catalog-card__title">Cat Energy PRO 1000 г</h3>
+            <dl class="catalog-card__values values-list">
+              <div class="values-list__item">
+                <dt class="values-list__value">Масса</dt>
+                <dd class="values-list__description">1000 г</dd>
+              </div>
+              <div class="values-list__item">
+                <dt class="values-list__value">Вкус</dt>
+                <dd class="values-list__description">Рыба</dd>
+              </div>
+              <div class="values-list__item">
+                <dt class="values-list__value">Цена</dt>
+                <dd class="values-list__description">1000 ₽</dd>
+              </div>
+            </dl>
+          </div>
+          <a class="catalog-card__button button-primary" href="#">Заказать</a>
         </li>
         <li class="catalog__item catalog-card">
           <picture>
             <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/catalog-desktop-5@1x.png 1x, images/catalog/catalog-desktop-5@2x.png 2x">
             <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/catalog-tablet-5@1x.png 1x, images/catalog/catalog-tablet-5@2x.png 2x">
-            <img width="140" height="107" src="images/catalog/catalog-mobile-5@1x.png" srcset="images/catalog/catalog-mobile-5@2x.png 2x" alt="Изображение товара.">
+            <img class="catalog-card__image" width="140" height="107" src="images/catalog/catalog-mobile-5@1x.png" srcset="images/catalog/catalog-mobile-5@2x.png 2x" alt="Изображение товара.">
           </picture>
-          <h3 class="catalog-card__title">Cat Energy SLIM 500 г</h3>
-          <dl class="catalog-card__values values-list">
-            <div class="values-list__item">
-              <dt class="values-list__value">500 г</dt>
-              <dd class="values-list__description">Масса</dd>
-            </div>
-            <div class="values-list__item">
-              <dt class="values-list__value">Гречка</dt>
-              <dd class="values-list__description">Вкус</dd>
-            </div>
-            <div class="values-list__item">
-              <dt class="values-list__value">400 ₽</dt>
-              <dd class="values-list__description">Цена</dd>
-            </div>
-          </dl>
-          <a class="button-primary" href="#">Заказать</a>
+          <div class="catalog-card__product-info">
+            <h3 class="catalog-card__title">Cat Energy SLIM 500 г</h3>
+            <dl class="catalog-card__values values-list">
+              <div class="values-list__item">
+                <dt class="values-list__value">Масса</dt>
+                <dd class="values-list__description">500 г</dd>
+              </div>
+              <div class="values-list__item">
+                <dt class="values-list__value">Вкус</dt>
+                <dd class="values-list__description">Гречка</dd>
+              </div>
+              <div class="values-list__item">
+                <dt class="values-list__value">Цена</dt>
+                <dd class="values-list__description">400 ₽</dd>
+              </div>
+            </dl>
+          </div>
+          <a class=" catalog-card__button button-primary" href="#">Заказать</a>
         </li>
         <li class="catalog__item catalog-card">
           <picture>
             <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/catalog-desktop-6@1x.png 1x, images/catalog/catalog-desktop-6@2x.png 2x">
             <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/catalog-tablet-6@1x.png 1x, images/catalog/catalog-tablet-6@2x.png 2x">
-            <img width="140" height="107" src="images/catalog/catalog-mobile-6@1x.png" srcset="images/catalog/catalog-mobile-6@2x.png 2x" alt="Изображение товара.">
+            <img class="catalog-card__image" width="140" height="107" src="images/catalog/catalog-mobile-6@1x.png" srcset="images/catalog/catalog-mobile-6@2x.png 2x" alt="Изображение товара.">
           </picture>
-          <h3 class="catalog-card__title">Cat Energy SLIM 1000 г</h3>
-          <dl class="catalog-card__values values-list">
-            <div class="values-list__item">
-              <dt class="values-list__value">1000 г</dt>
-              <dd class="values-list__description">Масса</dd>
-            </div>
-            <div class="values-list__item">
-              <dt class="values-list__value">Гречка</dt>
-              <dd class="values-list__description">Вкус</dd>
-            </div>
-            <div class="values-list__item">
-              <dt class="values-list__value">700 ₽</dt>
-              <dd class="values-list__description">Цена</dd>
-            </div>
-          </dl>
-          <a class="button-primary" href="#">Заказать</a>
+          <div class="catalog-card__product-info">
+            <h3 class="catalog-card__title">Cat Energy SLIM 1000 г</h3>
+            <dl class="catalog-card__values values-list">
+              <div class="values-list__item">
+                <dt class="values-list__value">Масса</dt>
+                <dd class="values-list__description">1000 г</dd>
+              </div>
+              <div class="values-list__item">
+                <dt class="values-list__value">Вкус</dt>
+                <dd class="values-list__description">Гречка</dd>
+              </div>
+              <div class="values-list__item">
+                <dt class="values-list__value">Цена</dt>
+                <dd class="values-list__description">700 ₽</dd>
+              </div>
+            </dl>
+          </div>
+          <a class="catalog-card__button button-primary" href="#">Заказать</a>
         </li>
         <li class="catalog__item catalog-card">
           <picture>
             <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/catalog-desktop-7@1x.png 1x, images/catalog/catalog-desktop-7@2x.png 2x">
             <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/catalog-tablet-7@1x.png 1x, images/catalog/catalog-tablet-7@2x.png 2x">
-            <img width="140" height="107" src="images/catalog/catalog-mobile-7@1x.png" srcset="images/catalog/catalog-mobile-7@2x.png 2x" alt="Изображение товара.">
+            <img class="catalog-card__image" width="140" height="107" src="images/catalog/catalog-mobile-7@1x.png" srcset="images/catalog/catalog-mobile-7@2x.png 2x" alt="Изображение товара.">
           </picture>
-          <h3 class="catalog-card__title">Cat Energy SLIM 500 г</h3>
-          <dl class="catalog-card__values values-list">
-            <div class="values-list__item">
-              <dt class="values-list__value">500 г</dt>
-              <dd class="values-list__description">Масса</dd>
-            </div>
-            <div class="values-list__item">
-              <dt class="values-list__value">Рис</dt>
-              <dd class="values-list__description">Вкус</dd>
-            </div>
-            <div class="values-list__item">
-              <dt class="values-list__value">500 ₽</dt>
-              <dd class="values-list__description">Цена</dd>
-            </div>
-          </dl>
-          <a class="button-primary" href="#">Заказать</a>
+          <div class="catalog-card__product-info">
+            <h3 class="catalog-card__title">Cat Energy SLIM 500 г</h3>
+            <dl class="catalog-card__values values-list">
+              <div class="values-list__item">
+                <dt class="values-list__value">Масса</dt>
+                <dd class="values-list__description">500 г</dd>
+              </div>
+              <div class="values-list__item">
+                <dt class="values-list__value">Вкус</dt>
+                <dd class="values-list__description">Рис</dd>
+              </div>
+              <div class="values-list__item">
+                <dt class="values-list__value">Цена</dt>
+                <dd class="values-list__description">500 ₽</dd>
+              </div>
+            </dl>
+          </div>
+          <a class="catalog-card__button button-primary" href="#">Заказать</a>
         </li>
       </ul>
       <div class="show-more">
         <p class="show-more__title">Показать еще 100500 товаров</p>
         <p class="show-more__subtitle">На самом деле вкусов гораздо больше!</p>
-        <a class="button-secondary" href="#">Показать все</a>
+        <a class="show-more__button button-secondary" href="#">Показать все</a>
       </div>
     </section>
 
@@ -279,12 +293,14 @@
       </form>
     </section>
 
-    <section class="partnership partnership--in-catalog">
-      <h2 class="partnership__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <p class="partnership__address">ул. Большая
-        Конюшенная, д. 19/8
-        Санкт-Петербург
-      </p>
+    <section class="partnership">
+      <div class="partnership__info partnership__info--in-catalog">
+        <h2 class="partnership__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="partnership__address">ул. Большая
+          Конюшенная, д. 19/8
+          Санкт-Петербург
+        </p>
+      </div>
       <picture>
         <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x">
         <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x">

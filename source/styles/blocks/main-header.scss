@@ -3,8 +3,14 @@
   align-items: center;
   justify-content: space-between;
 
-  margin-top: 13px;
-  margin-bottom: 15px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+
+  &--catalog {
+    width: 100%;
+    margin-bottom: 27px;
+    border-bottom: 1px solid #d9d9d9;
+  }
 }
 
 .main-header__logo {
@@ -30,6 +36,10 @@
   border: none;
   background-color: transparent;
 
-  background-image: url("../../icons/stack.svg#icon-close");
+  background-image: url("../../icons/stack.svg#icon-burger");
   cursor: pointer;
+}
+
+.main-nav__toggle--is-opened {
+  background-image: url("../../icons/stack.svg#icon-close");
 }
