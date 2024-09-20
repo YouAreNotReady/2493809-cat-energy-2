@@ -1,12 +1,20 @@
 .bonus {
-  background-color: rgba(104, 183, 56, 0.85);
+  background-color: #68b738;
   background-image: url("../../icons/stack.svg#icon-gift");
   background-repeat: no-repeat;
+  background-size: 78px 80px;
+  background-position: center 58px;
 }
 
 .bonus__desc {
+  width: 161px;
+  margin: 0 auto;
+  padding-top: 186px;
+  padding-bottom: 43px;
+
   font-family: $primary-font;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  text-align: center;
 }

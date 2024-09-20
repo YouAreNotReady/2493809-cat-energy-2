@@ -16,15 +16,18 @@
 
   &::before {
     @media (min-width: $mobile-width-only) {
-      content: "";
-      display: block;
       position: absolute;
       top: 0;
       left: 0;
+
+      display: block;
       width: 100%;
       height: 100%;
+
       background-image: url("../../images/background-hero-mobile@1x.png");
       background-repeat: no-repeat;
+      background-size: cover;
+      content: "";
       opacity: 0.15;
     }
   }
