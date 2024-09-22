@@ -2,11 +2,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   padding: 13px 20px 15px;
 
   &--catalog {
     border-bottom: 1px solid #d9d9d9;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 30px 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 110px 55px;
   }
 }
 
@@ -19,12 +28,11 @@
 }
 
 .main-header__logo-image {
+  display: block;
   margin-right: 56px;
 }
 
 .main-header__toggle {
-  position: relative;
-
   display: block;
   width: 18px;
   height: 18px;
@@ -34,6 +42,10 @@
 
   background-image: url("../../icons/stack.svg#icon-burger");
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-header__toggle--is-opened {

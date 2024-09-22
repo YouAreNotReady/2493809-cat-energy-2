@@ -29,29 +29,29 @@
           <img class="main-header__logo-text-image" width="101" height="18" src="images/logo-text-dark.svg" alt="Cat energy.">
         </picture>
       </a>
-      <button class="main-header__toggle main-header__toggle--is-opened" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <nav class="main-nav">
+        <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper main-nav__wrapper--hidden">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current">
+              <a href="#">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="primary-button" href="#">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <nav class="main-nav">
-      <div class="main-nav__wrapper" style="display: block">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
-            <a href="#">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="primary-button" href="#">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
   </header>
 
   <main class="main-container">

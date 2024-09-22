@@ -4,9 +4,9 @@ const nav = document.querySelector('.main-nav__wrapper');
 
 toggleButton.onclick = () => {
   toggleButton.classList.toggle('main-header__toggle--is-opened');
-  if (nav.style.display === 'block') {
-    nav.style.display = 'none';
+  if (nav.classList.contains('main-nav__wrapper--hidden')) {
+    nav.classList.remove('main-nav__wrapper--hidden');
   } else {
-    nav.style.display = 'block';
+    nav.classList.add('main-nav__wrapper--hidden');
   }
 };
