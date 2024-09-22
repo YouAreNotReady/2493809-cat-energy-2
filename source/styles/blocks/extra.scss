@@ -70,7 +70,7 @@
   margin-bottom: 40px;
 
   &::before {
-    @media (min-width: $mobile-width-only) {
+    @media (max-width: calc($tablet-width - 1px)) {
       position: absolute;
       top: 0;
       left: 0;
@@ -84,6 +84,10 @@
       background-size: cover;
       content: "";
       opacity: 0.15;
+    }
+
+    @media (max-width: calc($tablet-width - 1px)) and (min-resolution: 2x) {
+      background-image: url("../../images/catalog/background-bonus@2x.png");
     }
   }
 }
