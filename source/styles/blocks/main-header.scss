@@ -3,12 +3,9 @@
   align-items: center;
   justify-content: space-between;
 
-  padding-top: 13px;
-  padding-bottom: 15px;
+  padding: 13px 20px 15px;
 
   &--catalog {
-    width: 100%;
-    margin-bottom: 27px;
     border-bottom: 1px solid #d9d9d9;
   }
 }
@@ -21,12 +18,11 @@
   text-decoration: none;
 }
 
-
 .main-header__logo-image {
   margin-right: 56px;
 }
 
-.main-nav__toggle {
+.main-header__toggle {
   position: relative;
 
   display: block;
@@ -40,6 +36,6 @@
   cursor: pointer;
 }
 
-.main-nav__toggle--is-opened {
+.main-header__toggle--is-opened {
   background-image: url("../../icons/stack.svg#icon-close");
 }

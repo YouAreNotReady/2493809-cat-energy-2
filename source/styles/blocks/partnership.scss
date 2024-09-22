@@ -1,9 +1,7 @@
 .partnership__info {
   display: flex;
   justify-content: space-between;
-  width: 320px;
-  //временно
-  margin-left: -20px;
+
   padding: 20px;
 
   &--in-catalog {
@@ -36,7 +34,4 @@
 
 .partnership__map {
   display: block;
-  //временно
-  min-width: 320px;
-  margin-left: -20px;
 }

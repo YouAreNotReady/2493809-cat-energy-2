@@ -5,18 +5,15 @@
 .page__body {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  min-width: 320px;
   min-height: 100%;
   margin: 0 auto;
-  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    padding: 0 30px;
+    min-width: 708px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    padding: 0 110px;
+    min-width: 1220px;
   }
 }

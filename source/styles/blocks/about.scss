@@ -1,5 +1,6 @@
 .about__title {
-  margin: 0;
+  width: 280px;
+  margin: 0 auto;
   margin-bottom: 40px;
 
   font-family: $secondary-font;
@@ -12,7 +13,8 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin: 0;
+  width: 280px;
+  margin: 0 auto;
   padding: 0;
 
   list-style-type: none;

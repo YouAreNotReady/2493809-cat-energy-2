@@ -6,9 +6,6 @@
 .hero__section {
   position: relative;
 
-  min-width: 320px;
-  //временно
-  margin-left: -20px;
   margin-bottom: 138px;
   padding: 27px 35px 164px 36px;
 
@@ -63,6 +60,8 @@
 .hero__image-wrapper {
   position: relative;
   top: -133px;
+  width: 280px;
+  margin: 0 auto;
 }
 
 
@@ -74,6 +73,7 @@
 
 .hero__button {
   display: block;
-  width: 100%;
+  width: 280px;
+  margin: 0 auto;
   padding: 10px 64px;
 }
