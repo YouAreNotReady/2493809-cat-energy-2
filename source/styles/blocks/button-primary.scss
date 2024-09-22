@@ -1,4 +1,6 @@
 .button-primary {
+  height: 40px;
+
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
@@ -10,6 +12,8 @@
   text-decoration: none;
 
   &--bigger {
+    height: 56px;
+
     font-family: $secondary-font;
     font-size: 20px;
     line-height: 26px;
