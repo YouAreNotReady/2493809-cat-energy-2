@@ -1,15 +1,11 @@
-.facts-list {
-  display: flex;
-  justify-content: space-between;
-  width: 280px;
-  margin: 0 auto;
-  margin-bottom: 34px;
-}
-
 .facts-list__item {
   position: relative;
 
   width: 124px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
 }
 
 .facts-list__number {
@@ -34,6 +30,10 @@
 
     background-color: #eaeaea;
     content: "";
+
+    @media (min-width: $tablet-width) {
+      background-color: #ffffff;
+    }
   }
 }
 
