@@ -14,10 +14,18 @@
     color: #000000;
     text-transform: uppercase;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 376px;
+  }
 }
 
 .email-form__button {
   width: 100%;
   padding: 10px 80px;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+  }
 }
