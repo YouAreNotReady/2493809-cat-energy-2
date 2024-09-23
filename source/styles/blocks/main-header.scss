@@ -12,6 +12,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 25px 30px 65px;
+
+    &--catalog {
+      border-bottom: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
