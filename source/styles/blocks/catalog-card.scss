@@ -43,6 +43,7 @@
 }
 
 .catalog-card__button {
+  @include button-primary;
   grid-column: 1/-1;
   padding: 10px 110px;
 

@@ -23,7 +23,8 @@
 }
 
 .extra-card__button {
-  display: block;
+  @include button-primary;
+
   width: 100%;
   padding: 10px 110px;
 
