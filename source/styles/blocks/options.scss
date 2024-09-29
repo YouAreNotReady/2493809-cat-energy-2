@@ -1,3 +1,15 @@
+.options {
+  @include mobile-width;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-width;
+  }
+}
+
 .options__list {
   margin: 0;
   padding: 0;
@@ -9,7 +21,6 @@
     flex-wrap: wrap;
     gap: 80px;
     margin-bottom: 71px;
-    padding: 0 110px;
   }
 }
 
@@ -89,6 +100,10 @@
 
     background-color: #d9d9d9;
     content: "";
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
   }
 
   &::after {

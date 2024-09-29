@@ -1,17 +1,24 @@
+.catalog {
+  @include mobile-width;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-width;
+  }
+}
+
 .catalog__title {
   margin: 0;
   margin-top: 29px;
   margin-bottom: 41px;
-  padding-left: 20px;
 
   font-family: $secondary-font;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 30px;
-  }
 }
 
 .catalog__list {
@@ -25,12 +32,11 @@
   @media (min-width: $tablet-width) {
     flex-flow: row wrap;
     gap: 60px;
-    padding: 0 30px;
     margin-bottom: 74px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 80px;
+    gap: 63px 80px;
   }
 }
 

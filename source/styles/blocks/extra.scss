@@ -1,9 +1,20 @@
+.extra {
+  @include mobile-width;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-width;
+  }
+}
+
 .extra__title {
   position: relative;
 
   margin: 0;
   margin-bottom: 49px;
-  padding-left: 20px;
 
   font-family: $secondary-font;
   font-size: 24px;
@@ -24,8 +35,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 70px;
-
     //временно
     // &::before {
     //   position: absolute;
@@ -50,7 +59,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 896px 245px;
-    grid-gap: 80px;
+    justify-content: space-between;
   }
 }
 
@@ -64,7 +73,6 @@
 .extra__item {
   position: relative;
   margin-bottom: 31px;
-  padding: 0 20px;
 
   &:last-child {
     margin-bottom: 54px;
@@ -128,21 +136,20 @@
 
 
   &::before {
-    @media (max-width: calc($tablet-width - 1px)) {
-      position: absolute;
-      top: 0;
-      left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 
-      display: block;
-      width: 100%;
-      height: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
 
-      background-image: url("../../images/catalog/background-bonus-mobile@1x.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      content: "";
-      opacity: 0.15;
-    }
+    background-image: url("../../images/catalog/background-bonus-mobile@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    opacity: 0.15;
 
     @media (max-width: calc($tablet-width - 1px)) and (min-resolution: 2x) {
       background-image: url("../../images/catalog/background-bonus-mobile@2x.png");

@@ -1,31 +1,31 @@
 .example {
-  //временно
-  padding-bottom: 40px;
-
-  background-color: #eaeaea;
+  @include mobile-width;
+  padding-top: 25px;
 
   @media (min-width: $tablet-width) {
+    @include tablet-width;
+    padding-top: 45px;
     background-color: #ffffff;
   }
 
   @media (min-width: $desktop-width) {
+    @include desktop-width;
     display: grid;
     grid-template-columns: 436px 1fr;
+    padding-top: 0;
   }
+
+  padding-bottom: 40px;
+
+  background-color: #eaeaea;
 }
 
 .example__text-wrapper {
-  padding: 20px;
-  padding-top: 25px;
-
   @media (min-width: $tablet-width) {
-    padding-right: 30px;
     padding-bottom: 55px;
-    padding-left: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0;
     padding-bottom: 69px;
   }
 }

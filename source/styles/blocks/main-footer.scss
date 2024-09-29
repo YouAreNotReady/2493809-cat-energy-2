@@ -4,7 +4,10 @@
   align-items: center;
   gap: 40px;
   min-width: 320px;
-  padding: 40px 20px;
+
+  @include mobile-width;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   background-color: #f2f2f2;
 
@@ -12,7 +15,16 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding: 55px 30px;
+
+    @include tablet-width;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-width;
+    padding-top: 66px;
+    padding-bottom: 66px;
   }
 }
 
@@ -44,9 +56,8 @@
   min-width: 132px;
   max-width: 280px;
 
-  @media (min-width: $tablet-width) {
-    min-width: 132px;
-    max-width: 332px;
+  @media (min-width: $desktop-width) {
+    max-width: 480px;
   }
 }
 
