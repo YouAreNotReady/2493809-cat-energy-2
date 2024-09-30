@@ -8,7 +8,7 @@
   margin-bottom: 138px;
   padding: 27px 35px 164px 36px;
 
-  background-color: #68b738;
+  background-color: $basic-green;
 
   @media (min-width: $desktop-width) {
     background-color: unset;
@@ -59,7 +59,7 @@
       width: 100%;
       height: 694px;
 
-      background: linear-gradient(to right, #ffffff 50%, #68b738 50%);
+      background: linear-gradient(to right, #ffffff 50%, $basic-green 50%);
     }
   }
 }
