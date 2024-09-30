@@ -1,7 +1,7 @@
 .main-header {
   @include mobile-width;
   padding-top: 13px;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     @include tablet-width;
@@ -31,10 +31,14 @@
   }
 }
 
+.main-header__logo-image {
+  display: block;
+}
+
 .main-header__toggle {
   display: block;
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
 
   border: none;
   background-color: transparent;
