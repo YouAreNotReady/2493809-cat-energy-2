@@ -3,6 +3,7 @@
 
   @media (min-width: $tablet-width) {
     @include tablet-width;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,7 +36,9 @@
   flex-direction: column;
   gap: 20px;
   min-width: 280px;
+  max-width: max-content;
   margin: 0 auto;
+  margin-bottom: 49px;
   padding: 0;
 
   list-style-type: none;
@@ -43,12 +46,34 @@
 
   @media (min-width: $tablet-width) {
     flex-flow: row wrap;
-    gap: 37px 156px;
+    gap: 37px 155px;
     min-width: 82%;
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 45px;
+    padding-bottom: 47px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 1px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #e6e6e6;
+    }
   }
 
   @media (min-width: $desktop-width) {
+    column-gap: 95px;
     width: 100%;
+    margin-bottom: 69px;
+    padding-bottom: 0;
+
+    &::after {
+      content: none;
+    }
   }
 }
 
@@ -58,8 +83,41 @@
   min-height: 60px;
   padding-left: 80px;
 
-  &:last-child {
-    margin-bottom: 49px;
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    min-height: 280px;
+
+    padding: 0;
+    padding-top: 151px;
+    padding-bottom: 57px;
+
+    &::after {
+      content: counter(item);
+      counter-increment: item;
+
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      top: 0;
+
+      display: block;
+      width: 121px;
+
+      font-family: $secondary-font;
+      font-size: 280px;
+      line-height: 280px;
+      text-align: right;
+      color: #f2f2f2;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
   }
 
   &::before {
@@ -79,30 +137,6 @@
 
       width: 80px;
       height: 80px;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 250px;
-    min-height: 280px;
-
-    padding: 0;
-    padding-top: 151px;
-    padding-bottom: 57px;
-
-    &::after {
-      position: absolute;
-      z-index: -1;
-      right: 0;
-      top: 0;
-      display: block;
-      width: 136px;
-      font-family: $secondary-font;
-      font-size: 280px;
-      line-height: 280px;
-      color: #f2f2f2;
-      counter-increment: item;
-      content: counter(item);
     }
   }
 }
@@ -137,6 +171,8 @@
   color: #444444;
 
   @media (min-width: $tablet-width) {
+    width: 245px;
+
     font-size: 16px;
     line-height: 24px;
   }

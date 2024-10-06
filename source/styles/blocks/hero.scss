@@ -110,6 +110,7 @@
 }
 
 .hero__slogan {
+  width: 250px;
   margin: 0;
 
   font-family: $secondary-font;
@@ -120,6 +121,8 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    width: auto;
+
     font-size: 20px;
     line-height: 20px;
     color: #000000;
