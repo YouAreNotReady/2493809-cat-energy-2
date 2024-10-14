@@ -50,3 +50,54 @@
   padding-right: 110px;
   padding-left: 110px;
 }
+
+@mixin header-decoration {
+  display: inline-block;
+  padding-right: 40px;
+
+  background-color: #ffffff;
+
+  &::after,
+  &::before {
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+    top: 12px;
+
+    display: block;
+    height: 2px;
+
+    background-color: $basic-green;
+  }
+
+  &::after {
+    left: 0;
+    right: -20px;
+
+    @media (min-width: $tablet-width) {
+      right: -30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: -110px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+
+    &::before {
+      right: 0;
+      left: -20px;
+
+      @media (min-width: $tablet-width) {
+        left: -30px;
+      }
+
+      @media (min-width: $desktop-width) {
+        left: -110px;
+      }
+    }
+  }
+}

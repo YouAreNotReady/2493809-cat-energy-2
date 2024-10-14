@@ -20,39 +20,10 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+}
 
-  &::after {
-    position: absolute;
-    top: 12px;
-    right: 0;
-    left: 265px;
-    height: 2px;
-
-    display: block;
-
-    background-color: $basic-green;
-    content: "";
-  }
-
-  @media (min-width: $tablet-width) {
-    //временно
-    // &::before {
-    //   position: absolute;
-    //   top: 12px;
-    //   left: 0;
-    //   right: 738px;
-    //   height: 2px;
-
-    //   display: block;
-
-    //   background-color: $basic-green;
-    //   content: "";
-    // }
-
-    &::after {
-      left: 340px;
-    }
-  }
+.extra__title span {
+  @include header-decoration;
 }
 
 .extra__wrapper {
