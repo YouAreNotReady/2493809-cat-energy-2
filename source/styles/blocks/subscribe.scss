@@ -20,6 +20,20 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .subscribe__title span {
@@ -29,18 +43,28 @@
 .subscribe__text {
   margin: 0;
   margin-bottom: 24px;
-  padding: 0 20px;
 
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 632px;
+    margin: 0 auto 24px;
+
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .subscribe__form {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
